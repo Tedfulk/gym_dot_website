@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { Link, Stack, Typography } from '@mui/material';
@@ -37,7 +36,7 @@ function DrawerAppBar(props) {
         {navItems.map((page) => (
           <ListItem key={page} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Link href={`/${page}`} key={page} underline='none' style={{ color:'#9C9C9C', fontSize: 20 }}>{page}</Link>
+              <Link href={`/${page}`} key={page} underline='none' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif', margin: 3 }}>{page}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -49,10 +48,10 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ bgcolor: '#FFFFFF' }}>
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="#9C9C9C"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -70,7 +69,7 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
             <Stack spacing={4} direction='row' m={2}>
                 {navItems.map((page) => (
-                  <Link href={`/${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20 }}>{page}</Link>
+                  <Link href={`/${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif' }}>{page}</Link>
                   ))}
 
             </Stack>
