@@ -1,9 +1,17 @@
-import React from 'react'
+import * as React from 'react';
+import Box from '@mui/joy/Box';
+import Button from '@mui/joy/Button';
+// import Card from '@mui/joy/Card';
+// import CardCover from '@mui/joy/CardCover';
+// import CardContent from '@mui/joy/CardContent';
+// import Typography from '@mui/joy/Typography';
+// import HeroBannerImage from '../assets/images/hero-banner-image.png';
 
-function Footer() {
+
+export default function ButtonVariants() {
   return (
-    <div>Footer</div>
-  )
+    <Box>
+      <Button variant="outlined">Outlined</Button>
+    </Box>
+  );
 }
-
-export default Footer

@@ -6,7 +6,7 @@ import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import '@fontsource/public-sans';
-import HeroBannerImage from '../assets/images/hero-banner-image.png';
+import HeroBannerImage from '../assets/images/handstands.png';
 
 
 function HeroBanner() {
@@ -22,17 +22,21 @@ function HeroBanner() {
           />
         </CardCover>
         <CardContent>
-          <Typography sx={{ fontSize: { lg: '44px', xs: '40px' }, fontFamily: 'sans-serif', fontWeight: '700', color: 'black', display: 'flex', justifyContent: 'center', textAlign: 'center' }} mb="23px" mt="30px">
-        A Cutting-edge <br />
+          <Typography sx={{ fontSize: { lg: '44px', xs: '40px' }, fontFamily: 'sans-serif', fontWeight: '700', color: 'white', display: 'flex', justifyContent: 'center', textAlign: 'center' }} mb="39px" mt="40px">
+        A Cutting-edge 
+        <br />
         Fitness Gym
             </Typography>
-            <Typography fontSize="22px" fontFamily='sans-serif' lineHeight="35px" sx={{
-                    color: 'black', 
+            <Typography fontSize="16px" fontFamily='sans-serif' lineHeight="39px" sx={{
+                    color: 'white', 
                     display: 'flex', 
                     justifyContent: 'center', 
                     textAlign: 'center' }}>
-              Welcome to a Gym where training happens in a different way. Get active <br />
-              and come workout with us!
+              We offer an unpretentious and results-oriented community 
+              <br/>
+              that is invested in your goals and success. 
+              <br/>
+              <br/>
             </Typography>
         </CardContent>
         <Box sx={{

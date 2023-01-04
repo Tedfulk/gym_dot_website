@@ -10,11 +10,29 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import Slide from '@mui/material/Slide';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link, Stack, Typography } from '@mui/material';
 
 
 const drawerWidth = 240;
 const navItems = ['Home', 'The Gym', 'Groups', 'Single Group', 'Exercises', 'News', 'Contact'];
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -48,34 +66,36 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" sx={{ bgcolor: '#FFFFFF' }}>
-        <Toolbar>
-          <IconButton
-            color="#9C9C9C"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Link href={"Home"}>
-              <img src={Logo} 
-              alt="GymDot Logo" 
-              style={{ width: '110px', height: '120px'}}/>
-          </Link>
-          <Typography sx={{ flexGrow: 1 }}>
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
-            <Stack spacing={4} direction='row' m={2}>
-                {navItems.map((page) => (
-                  <Link href={`/${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif' }}>{page}</Link>
-                  ))}
+      <HideOnScroll {...props}>
+        <AppBar component="nav" sx={{ bgcolor: '#FFFFFF' }}>
+          <Toolbar>
+            <IconButton
+              color="#9C9C9C"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' } }}
+              >
+              <MenuIcon />
+            </IconButton>
+            <Link href={"Home"}>
+                <img src={Logo} 
+                alt="GymDot Logo" 
+                style={{ width: '110px', height: '120px'}}/>
+            </Link>
+            <Typography sx={{ flexGrow: 1 }}>
+            </Typography>
+            <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
+              <Stack spacing={4} direction='row' m={2}>
+                  {navItems.map((page) => (
+                    <Link href={`/${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif' }}>{page}</Link>
+                    ))}
 
-            </Stack>
-          </Box>
-        </Toolbar>
-      </AppBar>
+              </Stack>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
       <Box component="nav">
         <Drawer
           container={container}
