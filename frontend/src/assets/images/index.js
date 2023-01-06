@@ -6,7 +6,7 @@ function importAll(r) {
     return images;
 }
 
-const carouselimages = importAll(require.context('./carousel', false, /\.(png)$/));
+const carouselimages = importAll(require.context('./carousel', false, /\.(png|jpeg)$/));
 export const coachesimages = importAll(require.context('./coaches', false, /\.(png)$/));
 
 export default carouselimages;

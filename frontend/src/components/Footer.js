@@ -1,17 +1,25 @@
 import * as React from 'react';
-import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-// import Card from '@mui/joy/Card';
-// import CardCover from '@mui/joy/CardCover';
-// import CardContent from '@mui/joy/CardContent';
-// import Typography from '@mui/joy/Typography';
-// import HeroBannerImage from '../assets/images/hero-banner-image.png';
+import { Box, Typography } from '@mui/material/';
 
 
-export default function ButtonVariants() {
+export default function footer() {
   return (
-    <Box>
-      <Button variant="outlined">Outlined</Button>
+    <Box sx={{ bgcolor: 'black', color: 'white', width: '100%', height: '2rem', display: 'flex', justifyContent: 'space-evenly', pt: 1 }}>
+      <Typography>
+        Made with Material UI
+      </Typography>
+      <Typography>
+        |
+      </Typography>
+      <Typography>
+        Powered by React and Energy Drinks
+      </Typography>
+      <Typography>
+        |
+      </Typography>
+      <Typography>
+        © 2023 Crossfit Sua Sponte
+      </Typography>
     </Box>
   );
 }

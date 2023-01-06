@@ -26,11 +26,6 @@ function GymPics() {
             image: carouselimages['liz-clean.png']
         },
         {
-            id: 4,
-            name: "Sua Fam",
-            image: carouselimages['sua-fam.png']
-        },
-        {
             id: 5,
             name: "Sweat Angel",
             image: carouselimages['sweat-angel.png']
@@ -46,16 +41,6 @@ function GymPics() {
             image: carouselimages['alexis.png']
         },
         {
-            id: 8,
-            name: "cakeweightsemi",
-            image: carouselimages['cakeweightsemi.png']
-        },
-        {
-            id: 9,
-            name: "caringjohn",
-            image: carouselimages['caringjohn.png']
-        },
-        {
             id: 10,
             name: "cleanprep",
             image: carouselimages['cleanprep.png']
@@ -64,11 +49,6 @@ function GymPics() {
             id: 11,
             name: "cow",
             image: carouselimages['cow.png']
-        },
-        {
-            id: 12,
-            name: "doggy",
-            image: carouselimages['doggy.png']
         },
         {
             id: 13,
@@ -86,16 +66,6 @@ function GymPics() {
             image: carouselimages['pushups.png']
         },
         {
-            id: 16,
-            name: "she-unit",
-            image: carouselimages['she-unit.png']
-        },
-        {   
-            id: 17,
-            name: "sierra-clean",
-            image: carouselimages['sierra-clean.png']
-        },
-        {
             id: 18,
             name: "sofia",
             image: carouselimages['sofia.png']
@@ -111,18 +81,42 @@ function GymPics() {
             image: carouselimages['swing.png']
         },
         {
+            id: 22,
+            name: "yogaclass",
+            image: carouselimages['yogaclass.png']
+        },
+        {
+            id: 16,
+            name: "she-unit",
+            image: carouselimages['she-unit.png']
+        },
+        {
             id: 21,
             name: "valk",
             image: carouselimages['valk.png']
         },
         {
-            id: 22,
-            name: "yogaclass",
-            image: carouselimages['yogaclass.png']
+            id: 12,
+            name: "doggy",
+            image: carouselimages['doggy.png']
         },
-        
+        {
+            id: 8,
+            name: "cakeweightsemi",
+            image: carouselimages['cakeweightsemi.png']
+        },
+        {
+            id: 9,
+            name: "caringjohn",
+            image: carouselimages['caringjohn.png']
+        },
+        {
+            id: 4,
+            name: "Sua Fam",
+            image: carouselimages['sua-fam.png']
+        },
     ]
-
+    
     return (
         <Carousel navButtonsAlwaysVisible='true' animation='slide' >
             {
