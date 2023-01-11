@@ -18,7 +18,7 @@ export default function footer() {
         |
       </Typography>
       <Typography>
-        © 2023 Crossfit Sua Sponte
+        © 2023 Gym Dot
       </Typography>
     </Box>
   );

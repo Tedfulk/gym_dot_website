@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import BodyPart from './BodyPart';
-// import ExerciseCard from './ExerciseCard';
+import ExerciseCard from './ExerciseCard';
 // import RightArrowIcon from '../assets/icons/right-arrow.png';
 // import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
@@ -35,7 +35,7 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollbar = ({ data, setBodyPart, bodyPart }) => (
+const HorizontalScrollbar = ({ data, setBodyPart, bodyPart, bodyParts }) => (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} >
         {data.map((item) => (
             <Box
@@ -43,7 +43,7 @@ const HorizontalScrollbar = ({ data, setBodyPart, bodyPart }) => (
             itemID={item.id || item}
             title={item.id || item}
             >
-            <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
+            {bodyParts ? <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} /> : <ExerciseCard exercise={item} /> }
         </Box>
         ))}
     </ScrollMenu>

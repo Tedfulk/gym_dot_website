@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroBanner from '../components/HeroBanner'
-import { Box, Typography, Button, Rating } from '@mui/material'
+import { Box, Typography, Button, Rating, Link } from '@mui/material'
 import Squatting from '../assets/images/tom-squatting.jpeg'
 import Mandy from '../assets/images/mandy.png'
 import Sierra from '../assets/images/sierra.jpg'
@@ -8,7 +8,13 @@ import John from '../assets/images/John-Dill.jpg'
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Carousel from '../components/Carousel'
+import Socials from '../components/Socials'
+import Map from '../assets/images/location.png'
+
 
 
 
@@ -20,7 +26,7 @@ function Home() {
     <Box>
         <HeroBanner />
            {/* Welcome to the Gym */}
-        <Box sx={{ display: 'flex', bgcolor: '#405378', color: 'white' }}>
+        <Box sx={{ display: 'flex', bgcolor: '#405378', color: 'white', maxWidth: '50%' }}>
           <Box>
             <Typography variant="h3" align="left" sx={{ mt: 25, mb: 3, ml: 5, fontWeight: '700' }}>
               Welcome to our Gym 
@@ -33,8 +39,8 @@ function Home() {
             display: 'flex', 
             justifyContent: 'center', 
             textAlign: 'center' }}>
-          <Button href="Contact" variant="outlined" size="medium" color='warning' sx={{ fontFamily: 'sans-serif', color: '#FFBD00',border: '2px solid #FFBD00' }}>SIGN UP NOW</Button>
-        </Box>
+              <Button href="Contact" variant="outlined" size="medium" color='warning' sx={{ fontFamily: 'sans-serif', color: '#FFBD00',border: '2px solid #FFBD00' }}>SIGN UP NOW</Button>
+            </Box>
           </Box>
             <img src={Squatting} alt='Male squatting weight' loading='lazy' style={{ marginTop: '5rem', marginBottom: '5rem' }}/>
         </Box>
@@ -156,6 +162,37 @@ function Home() {
               Years Experience
             </Typography>
             </Box>
+        </Box>
+        {/* Location */}
+        <Box sx={{ display: 'flex', justifyContent: 'space-evenly', pt: 10, pb: 5 }}>
+          <Box sx={{ maxWidth: 500 }}>
+            <Typography variant='h3' sx={{ fontWeight: 600, mb: 2 }}>
+              Come Visit Us
+            </Typography>
+            <Typography variant='h6' sx={{ maxWidth: 500 }}>
+              <Link href='#schedule' underline='hover' color={'#FFBD00'} >
+              Weekly Classes
+              </Link>
+            </Typography>
+            <Typography sx={{ maxWidth: 500 }}>
+              <br/>
+              Kale chips knausgaard mustache blog fashion axe selfies salvia. Gluten-free post-ironic deep v typewriter. Cloud bread flannel poke, flexitarian vinyl iPhone church-key shaman williamsburg kitsch beard.
+            </Typography>
+            <Typography sx={{ maxWidth: 500, fontWeight: 600 }}>
+              <br/>
+              <PhoneIcon /> 919-555-5555
+              <br/>
+              <EmailIcon /> crossfitsuasponte@gmail.com
+              <br/>
+              <LocationOnIcon /> 1234 Main St. Raleigh, NC 27609
+            </Typography>
+          </Box>
+          <Box sx={{ maxWidth: 500 }}>
+            <img src={Map} alt='Map' style={{ width: '100%', height: '100%' }}/>
+          </Box>
+        </Box>
+        <Box>
+          <Socials />
         </Box>
     </Box>
     )

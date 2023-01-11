@@ -1,18 +1,7 @@
 import Logo from '../assets/images/gym-dot-high-resolution-logo-color-on-transparent-background.png'
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Slide from '@mui/material/Slide';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import { Link, Stack, Typography } from '@mui/material';
+import { Link, Stack, Typography, Divider, AppBar, Box, List, ListItem, ListItemButton, Slide, Toolbar, IconButton, useScrollTrigger, Drawer } from '@mui/material';
 
 
 const drawerWidth = 240;
@@ -20,9 +9,6 @@ const navItems = ['Home', 'The Gym', 'Groups', 'Single Group', 'Exercises', 'New
 
 function HideOnScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });

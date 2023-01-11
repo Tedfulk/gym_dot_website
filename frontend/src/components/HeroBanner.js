@@ -1,10 +1,5 @@
-import * as React from 'react'
-import Box from '@mui/joy/Box';
-import Card from '@mui/joy/Card';
-import Button from '@mui/joy/Button';
-import CardCover from '@mui/joy/CardCover';
-import CardContent from '@mui/joy/CardContent';
-import Typography from '@mui/joy/Typography';
+import * as React from 'react';
+import { Box, Card, Button, CardCover, CardContent, Typography } from '@mui/joy';
 import '@fontsource/public-sans';
 import HeroBannerImage from '../assets/images/handstands.png';
 

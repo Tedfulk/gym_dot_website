@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@mui/material'
-// import { Worm, LizPress, LizClean, SuaFam, SweatAngel, Gymnastics } from '../assets/images'
 import carouselimages from '../assets/images'
 
 
@@ -121,8 +120,8 @@ function GymPics() {
         <Carousel navButtonsAlwaysVisible='true' animation='slide' >
             {
                 items.map( (item) => 
-                <Paper sx={{height: '100%', width: '100%'}}>
-                    <img src={item.image} alt={item.name} style={{ width: '40%', height: '40%', marginLeft: '30%', paddingBottom: '2rem'}}/> 
+                <Paper key={item.id} sx={{height: '100%', width: '100%'}}>
+                    <img src={item.image} alt={item.name} key={item.id} style={{ width: '40%', height: '40%', marginLeft: '30%', paddingBottom: '2rem'}}/> 
                 </Paper>
                 )
             }
