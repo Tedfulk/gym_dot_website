@@ -47,7 +47,7 @@ function Groups() {
             Kale chips knausgaard mustache blog fashion axe selfies salvia. Gluten-free post-ironic deep v typewriter. Cloud bread flannel poke, flexitarian vinyl iPhone church-key shaman williamsburg kitsch beard.
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5}}>
-          <Button href="#OlympicLifting" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
+          <Button href="OlympicLifting" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
           </Box>
         </Box>
       </Box>
@@ -76,7 +76,7 @@ function Groups() {
             Kale chips knausgaard mustache blog fashion axe selfies salvia. Gluten-free post-ironic deep v typewriter. Cloud bread flannel poke, flexitarian vinyl iPhone church-key shaman williamsburg kitsch beard.
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5}}>
-          <Button href="#Crossfit" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
+          <Button href="Crossfit" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
           </Box>
         {/* Yoga */}
         </Box>
@@ -112,7 +112,7 @@ function Groups() {
             Kale chips knausgaard mustache blog fashion axe selfies salvia. Gluten-free post-ironic deep v typewriter. Cloud bread flannel poke, flexitarian vinyl iPhone church-key shaman williamsburg kitsch beard.
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5}}>
-          <Button href="#Yoga" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
+          <Button href="Yoga" variant='text' size="medium" color='error' sx={{ fontFamily: 'sans-serif', color: 'red', border: '2px solid red', }}>Details</Button>
           </Box>
         </Box>
       </Box>

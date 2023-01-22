@@ -1,8 +1,9 @@
 import React from 'react'
+import NewsComponent from '../components/NewsComponent'
 
 function News() {
   return (
-    <div>News</div>
+    <NewsComponent />
   )
 }
 

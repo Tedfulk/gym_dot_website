@@ -6,8 +6,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import BodyPart from './BodyPart';
 import ExerciseCard from './ExerciseCard';
-// import RightArrowIcon from '../assets/icons/right-arrow.png';
-// import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);

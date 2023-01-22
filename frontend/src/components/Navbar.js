@@ -5,7 +5,9 @@ import { Link, Stack, Typography, Divider, AppBar, Box, List, ListItem, ListItem
 
 
 const drawerWidth = 240;
-const navItems = ['Home', 'The Gym', 'Groups', 'Single Group', 'Exercises', 'News', 'Contact'];
+const navItems = ['Home', 'The Gym', 'Groups', 'Exercises', 
+'News',
+'Contact'];
 
 function HideOnScroll(props) {
   const { children, window } = props;

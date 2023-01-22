@@ -34,11 +34,7 @@ function Home() {
             <Typography sx={{ width: '35rem', mb: 5, ml: 5 }}>
               Being physically and mentally fit is necessary to live a happy, long life. Exercise is one of the best ways to keep a person healthy. Hence, it is always best to find a workout routine no matter how busy you are. Luckily, you don’t need to do it yourself as various personal trainers, or professional fitness coaches provide the help you need. And joining fitness classes is just at your fingertips.
             </Typography>
-            <Box sx={{ 
-            color: 'black',
-            display: 'flex', 
-            justifyContent: 'center', 
-            textAlign: 'center' }}>
+            <Box sx={{ textAlign: 'center' }}>
               <Button href="Contact" variant="outlined" size="medium" color='warning' sx={{ fontFamily: 'sans-serif', color: '#FFBD00',border: '2px solid #FFBD00' }}>SIGN UP NOW</Button>
             </Box>
           </Box>
