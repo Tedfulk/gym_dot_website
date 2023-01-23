@@ -22,8 +22,8 @@ const App = () => {
         <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
             <Navbar />
             <Routes>
-                    {/* <Route path="/" element={<Home />} /> */}
-                    <Route index element={<Home />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/Home" element={<Home />} />
                     <Route path="/The Gym" element={<TheGym />} />
                     <Route path="/Groups" element={<Groups />} />
                     <Route path="/OlympicLifting" element={<OlympicLifting />} />
