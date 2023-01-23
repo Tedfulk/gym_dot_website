@@ -22,15 +22,15 @@ const App = () => {
         <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
             <Navbar />
             <Routes>
-                <Route path="Home" element={<Home />} />
-                <Route path="The Gym" element={<TheGym />} />
-                <Route path="Groups" element={<Groups />} />
-                <Route path="OlympicLifting" element={<OlympicLifting />} />
-                <Route path="Crossfit" element={<Crossfit />} />
-                <Route path="Yoga" element={<Yoga />} />
-                <Route path="News" element={<News />} />
-                <Route path="Contact" element={<Contact />} />
-                <Route path="Exercises" element={<Exercises />} />
+                <Route path="/Home" element={<Home />} />
+                <Route path="/The Gym" element={<TheGym />} />
+                <Route path="/Groups" element={<Groups />} />
+                <Route path="/OlympicLifting" element={<OlympicLifting />} />
+                <Route path="/Crossfit" element={<Crossfit />} />
+                <Route path="/Yoga" element={<Yoga />} />
+                <Route path="/News" element={<News />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Exercises" element={<Exercises />} />
                 <Route path="/exercise/:id" element={<ExerciseDetail />} />
             </Routes>
             <Footer />
