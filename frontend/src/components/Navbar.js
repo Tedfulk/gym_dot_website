@@ -40,7 +40,7 @@ function DrawerAppBar(props) {
         {navItems.map((page) => (
           <ListItem key={page} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Link href={`/${page}`} key={page} underline='none' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif', margin: 3 }}>{page}</Link>
+              <Link href={`${page}`} key={page} underline='none' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif', margin: 3 }}>{page}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -74,7 +74,7 @@ function DrawerAppBar(props) {
             <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
               <Stack spacing={4} direction='row' m={2}>
                   {navItems.map((page) => (
-                    <Link href={`/${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif' }}>{page}</Link>
+                    <Link href={`${page}`} key={page} underline='hover' style={{ color:'#9C9C9C', fontSize: 20, fontFamily: 'sans-serif' }}>{page}</Link>
                     ))}
 
               </Stack>
