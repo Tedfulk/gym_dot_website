@@ -1,8 +1,8 @@
 import React from 'react'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import { Box, Typography, Card, CardMedia } from '@mui/material'
-import Grip from '../assets/images/snatch-grip.jpeg'
+import { Box, Typography } from '@mui/material'
+
 
 
 function WeeklySchedule() {

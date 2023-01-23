@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Box, Typography, Button } from '@mui/material'
-// import Ted from '../assets/images/ted-snatch.jpeg';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ProgressBar from '../components/ProgressBar';
 import Leeann from '../assets/images/leeann.png';
@@ -10,18 +9,56 @@ import Mic from '../assets/images/ted-mic.png';
 import OlympicPic from '../components/OlympicPic';
 
 const OlympicLifting = () => {
-    const testData = [
-    { completed: 45 },
-    { completed: 50 },
-    { completed: 55 },
-    { completed: 60 },
-    { completed: 70 },
-    { completed: 75 },
-    { completed: 80 },
-    { completed: 85 },
-    { completed: 90 },
-    { completed: 95 },
-];
+    
+    const [strength, setStrength] = useState(0);
+    const [mindset, setMindset] = useState(0);
+    const [endurance, setEndurance] = useState(0);
+    
+    useEffect(() => {
+        const testData = [
+        { completed: 45 },
+        { completed: 50 },
+        { completed: 55 },
+        { completed: 60 },
+        { completed: 70 },
+        { completed: 75 },
+        { completed: 80 },
+        { completed: 85 },
+        { completed: 90 },
+        { completed: 95 },
+    ];
+    setTimeout(() => setStrength(testData[Math.floor(Math.random() * 10)].completed), 1000);
+}, []);
+useEffect(() => {
+        const testData = [
+        { completed: 45 },
+        { completed: 50 },
+        { completed: 55 },
+        { completed: 60 },
+        { completed: 70 },
+        { completed: 75 },
+        { completed: 80 },
+        { completed: 85 },
+        { completed: 90 },
+        { completed: 95 },
+        ];
+        setTimeout(() => setMindset(testData[Math.floor(Math.random() * 10)].completed), 1000);
+    }, []);
+    useEffect(() => {
+        const testData = [
+        { completed: 45 },
+        { completed: 50 },
+        { completed: 55 },
+        { completed: 60 },
+        { completed: 70 },
+        { completed: 75 },
+        { completed: 80 },
+        { completed: 85 },
+        { completed: 90 },
+        { completed: 95 },
+        ];
+        setTimeout(() => setEndurance(testData[Math.floor(Math.random() * 10)].completed), 1000);
+    }, []);
 
 return (
     <Box>
@@ -44,21 +81,21 @@ return (
                     </Typography>
                     <ProgressBar
                         bgcolor={'#FFBD00'}
-                        completed={testData[Math.floor(Math.random() * 10)].completed}
+                        completed={strength}
                         />
                     <Typography variant="h6" sx={{ textAlign: 'start', fontWeight: 'bold', mb: 2,ml: 2 }}>
                         Mindset
                     </Typography>
                     <ProgressBar
                         bgcolor={'#FFBD00'}
-                        completed={testData[Math.floor(Math.random() * 10)].completed}
+                        completed={mindset}
                         />
                     <Typography variant="h6" sx={{ textAlign: 'start', fontWeight: 'bold', mb: 2, ml: 2 }}>
                         Endurance
                     </Typography>
                     <ProgressBar
                         bgcolor={'#FFBD00'}
-                        completed={testData[Math.floor(Math.random() * 10)].completed}
+                        completed={endurance}
                         />
                 </Box>
             </Box>

@@ -8,7 +8,6 @@ import Exercises from './pages/Exercises';
 import Home from './pages/Home';
 import TheGym from './pages/TheGym';
 import Groups from './pages/Groups';
-// import SingleGroup from './pages/SingleGroup';
 import News from './pages/News';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
@@ -26,7 +25,6 @@ const App = () => {
                 <Route path="Home" element={<Home />} />
                 <Route path="The Gym" element={<TheGym />} />
                 <Route path="Groups" element={<Groups />} />
-                {/* <Route path="Single Group" element={<SingleGroup />} /> */}
                 <Route path="OlympicLifting" element={<OlympicLifting />} />
                 <Route path="Crossfit" element={<Crossfit />} />
                 <Route path="Yoga" element={<Yoga />} />

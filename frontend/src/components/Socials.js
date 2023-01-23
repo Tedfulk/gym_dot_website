@@ -3,7 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GoogleIcon from '@mui/icons-material/Google';
-import { Box, Link, Typography } from '@mui/material'
+import { Box, Link  } from '@mui/material'
 
 const Socials = () => {
     return (
