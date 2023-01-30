@@ -26,19 +26,21 @@ function Home() {
     <Box>
         <HeroBanner />
            {/* Welcome to the Gym */}
-        <Box sx={{ display: 'flex', bgcolor: '#405378', color: 'white', maxWidth: '50%' }}>
-          <Box>
-            <Typography variant="h3" align="left" sx={{ mt: 25, mb: 3, ml: 5, fontWeight: '700' }}>
+        <Box sx={{ display: 'flex',  bgcolor: '#405378', color: 'white', pt: 10, alignItems: 'center'}}>
+          <Box sx={{ maxWidth: '50%',  }}>
+            <Typography variant="h3" align="left" sx={{ mb: 3, ml: 5, fontWeight: '700' }}>
               Welcome to our Gym 
             </Typography>
-            <Typography sx={{ width: '35rem', mb: 5, ml: 5 }}>
+            <Typography sx={{ mb: 5, ml: 5, mr: 5}}>
               Being physically and mentally fit is necessary to live a happy, long life. Exercise is one of the best ways to keep a person healthy. Hence, it is always best to find a workout routine no matter how busy you are. Luckily, you don’t need to do it yourself as various personal trainers, or professional fitness coaches provide the help you need. And joining fitness classes is just at your fingertips.
             </Typography>
-            <Box sx={{ textAlign: 'center' }}>
-              <Button href="Contact" variant="outlined" size="medium" color='warning' sx={{ fontFamily: 'sans-serif', color: '#FFBD00',border: '2px solid #FFBD00' }}>SIGN UP NOW</Button>
+            <Box sx={{ textAlign: 'center', mb: 5, mt: 5,  }}>
+              <Button href="Contact" variant="outlined" size="medium" color='warning' sx={{ fontFamily: 'sans-serif', color: '#FFBD00', border: '2px solid #FFBD00', }}>SIGN UP NOW</Button>
             </Box>
           </Box>
-            <img src={Squatting} alt='Male squatting weight' loading='lazy' style={{ marginTop: '5rem', marginBottom: '5rem' }}/>
+          <Box sx={{ mr: 5, display: 'flex', alignItems: 'center' }}>
+            <img src={Squatting} alt='Male squatting weight' loading='lazy' style={{ marginBottom: '5rem', maxWidth: '100%', height: 'auto' }}/>
+          </Box>
         </Box>
           {/* Why workout here? */}
         <Box sx={{ bgcolor: 'white', color: '#405378' }}> 
@@ -80,7 +82,7 @@ function Home() {
           <Typography variant='h3' sx={{ mb: 5, color: 'white', textAlign: 'center', fontWeight: '700' }}>
             Testimonials
           </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 7, mt: 5, mb: 5, pb: 5, color: 'white', textAlign: 'center' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 7, mt: 5, mb: 5, pb: 5, color: 'white', textAlign: 'center', pl: 2, pr: 2 }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
               <Box>
                 <Rating name="read-only" value={5} readOnly sx={{ fontSize: '1rem', marginBottom: 1, }} />
@@ -166,7 +168,7 @@ function Home() {
               Come Visit Us
             </Typography>
             <Typography variant='h6' sx={{ maxWidth: 500 }}>
-              <Link href='#schedule' underline='hover' color={'#FFBD00'} >
+              <Link href='Groups' underline='hover' color={'#FFBD00'} >
               Weekly Classes
               </Link>
             </Typography>
@@ -183,8 +185,8 @@ function Home() {
               <LocationOnIcon /> 1234 Main St. Raleigh, NC 27609
             </Typography>
           </Box>
-          <Box sx={{ maxWidth: 500 }}>
-            <img src={Map} alt='Map' style={{ width: '100%', height: '100%' }}/>
+          <Box sx={{ maxWidth: 500, display: 'flex', alignItems: 'center'}}>
+            <img src={Map} alt='Map' loading='lazy' style={{ width: '100%', height: 'auto', objectFit: 'contain' }}/>
           </Box>
         </Box>
         <Box>

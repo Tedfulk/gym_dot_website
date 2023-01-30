@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography, Box, Rating, Link} from '@mui/material';
+import { Typography, Box, Rating } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import TheGymPic from '../components/TheGymPic';
 import Leeann from '../assets/images/leeann.png';
@@ -94,15 +94,10 @@ function TheGym() {
         </Box>
       </Box>
       {/* Location */}
-      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', pt: 10, pb: 5, bgcolor: '#405378', color: 'white'}}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', pt: 10, pb: 5, pl: 2, pr: 2, bgcolor: '#405378', color: 'white'}}>
         <Box sx={{ maxWidth: 500 }}>
           <Typography variant='h3' sx={{ fontWeight: 600, mb: 2 }}>
             Come Visit Us
-          </Typography>
-          <Typography variant='h6' sx={{ maxWidth: 500 }}>
-            <Link href='#schedule' underline='hover' color={'#FFBD00'} >
-            Weekly Classes
-            </Link>
           </Typography>
           <Typography sx={{ maxWidth: 500 }}>
             <br/>
@@ -117,8 +112,8 @@ function TheGym() {
             <LocationOnIcon /> 1234 Main St. Raleigh, NC 27609
           </Typography>
         </Box>
-        <Box sx={{ maxWidth: 500 }}>
-          <img src={Map} alt='Map' style={{ width: '100%', height: '100%' }}/>
+        <Box sx={{ maxWidth: 500, display: 'flex', alignItems: 'center' }}>
+          <img src={Map} alt='Map' style={{ width: '100%', height: 'auto', objectFit: 'contain'  }}/>
         </Box>
       </Box>
       <Box sx={{ bgcolor: '#405378' }}>
